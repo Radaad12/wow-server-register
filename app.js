@@ -12,39 +12,49 @@ server.headersTimeout = 120 * 1000;
 const html = `
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Hello from Render!</title>
-    <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
-      }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
-      }
-      body {
-        background: white;
-      }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
+    <title>WoW Private Server Registration</title>
   </head>
+
+<style>
+	section {font-family:verdana; font-size:250%; text-align:center; margin-top:15%;}
+    div {width:200px;
+    margin:auto;
+    }
+
+    label, input {
+    font-family:verdana;
+    display: block;
+    }
+
+label {
+    margin-bottom: 10px;
+    }
+    input {
+        margin-bottom:10px;
+    }
+  </style>
+
   <body>
     <section>
-      Hello from Render!
-    </section>
+      WoW Private Server Registration
+    </section><br><br><br>
+    <div>
+
+      <form>
+    <label for="username">Username:</label>
+    	<input type="text" name="Username" required minlength="2">
+    
+
+    <label for="password">Password:</label>
+    	<input type="text"  name="password" required minlength="2">
+   
+
+  	<input type="submit" value="Register">
+    </form>
+    </div>
   </body>
+
 </html>
 `
