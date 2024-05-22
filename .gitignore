@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 /.vs/WoWExpressApp/FileContentIndex/cdd4c46f-52a4-475e-b992-921d58bc42cf.vsidx
+*.vsidx
